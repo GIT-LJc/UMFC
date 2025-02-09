@@ -1,0 +1,4 @@
+ftfy
+regex
+tqdm
+open_clip_torch

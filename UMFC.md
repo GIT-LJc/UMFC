@@ -1,4 +1,4 @@
-# Generalized Semi-Supervised Learning via Self-Supervised Feature Adaptation (UMFC)
+# UMFC: Unsupervised Multi-Domain Feature Calibration for Vision-Language Models
 
 This is an implementation of [UMFC](https://arxiv.org/abs/2411.06921) in the Annual Conference on Neural Information Processing Systems (NeurIPS 2024).
 

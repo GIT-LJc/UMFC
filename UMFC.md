@@ -1,3 +1,8 @@
+# Generalized Semi-Supervised Learning via Self-Supervised Feature Adaptation (UMFC)
+
+This is an implementation of [UMFC](https://arxiv.org/abs/2411.06921) in the Annual Conference on Neural Information Processing Systems (NeurIPS 2024).
+
+
 ## How to Install
 Our code is built upon the awesome toolbox [Dassl.pytorch](https://github.com/KaiyangZhou/Dassl.pytorch). To adapt it to our needs, we made some modifications to its framework. Therefore, setting up the `dassl` environment is required before running our code. Simply follow the instructions described [here](https://github.com/GIT-LJc/Dassl.change/blob/main/README.md) to install `dassl` as well as PyTorch. After that, run `pip install -r requirements.txt` under `UMFC/` to install a few more packages required by [CLIP](https://github.com/openai/CLIP) (this should be done when `dassl` is activated). Then, you are ready to go.
 
@@ -34,3 +39,15 @@ Obtain clustering labels based on visual features extracted by CLIP.
 **DomainNet:** `bash scripts/preprocessed.sh domainnet_preprocessed ZeroshotCLIP 6 0 trainu(or val)`
 
 **ImageNet-Variants:** `bash scripts/preprocessed.sh imagenet_ars_preprocessed ZeroshotCLIP 3 0 trainu(or val)`
+
+## Citation
+If you use this code in your research, please kindly cite the following paper
+
+```
+@inproceedings{liang2024umfc,
+    title={UMFC: Unsupervised Multi-Domain Feature Calibration for Vision-Language Models},
+    author={Liang, Jiachen and Hou, RuiBing and Hu, Minyang and Chang, Hong and Shan, Shiguang and Chen, Xilin},
+    booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+    year={2024}
+}
+```
